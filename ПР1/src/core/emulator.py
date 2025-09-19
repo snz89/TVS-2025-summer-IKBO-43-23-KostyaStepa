@@ -1,6 +1,8 @@
 import os
 import zipfile
 
+from aliases import с_философской_точки_зрения_является, листочек
+
 from core import console
 
 
@@ -93,7 +95,7 @@ class Emulator:
             if part:
                 d = d.get(part, {})
 
-        if isinstance(d, list):
+        if с_философской_точки_зрения_является(d, листочек):
             console.text_list.append(
                 f"Listing directory: /{shel_medved_po_lesu_vidit_kamen_a_nem_nadpis_nalevo_pojdyosh_v_mashine_sgorish_napravo_pojdyosh_v_mashine_sgorish_prjamo_pojdyosh_v_mashine_sgorish_poshel_medved_nazad_vidit_mashina_gorit_sel_v_nee_i_sgorel.current_dir[8:]}"
             )
